@@ -1,0 +1,434 @@
+#loading{
+	background-color: #1E515D;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: 0px;
+	#loading-center{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		#loading-center-absolute {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: 50px;
+			width: 300px;
+			margin-top: -25px;
+			margin-left: -150px;
+			.object{
+				width: 18px;
+				height: 18px;
+				background-color: #FFF;
+				float: left;
+			    margin-top: 15px;
+				margin-right: 15px;
+				-moz-border-radius: 50% 50% 50% 50%;
+				-webkit-border-radius: 50% 50% 50% 50%;
+				border-radius: 50% 50% 50% 50%;
+				-webkit-animation: object 1s infinite;
+				animation: object 1s infinite;
+				&:last-child{
+					margin-left:0px;
+				}
+				&:nth-child(9){
+					-webkit-animation-delay: 0.9s;
+			    	animation-delay: 0.9s;
+				}
+				&:nth-child(8){
+					-webkit-animation-delay: 0.8s;
+			    	animation-delay: 0.8s;
+				}
+				&:nth-child(7){
+					-webkit-animation-delay: 0.7s;
+			    	animation-delay: 0.7s;
+				}
+				&:nth-child(6){
+					-webkit-animation-delay: 0.6s;
+			    	animation-delay: 0.6s;
+				}
+				&:nth-child(5){
+					-webkit-animation-delay: 0.5s;
+			    	animation-delay: 0.5s;
+				}
+				&:nth-child(4){
+					-webkit-animation-delay: 0.4s;
+			    	animation-delay: 0.4s;
+				}
+				&:nth-child(3){
+					-webkit-animation-delay: 0.3s;
+			    	animation-delay: 0.3s;
+				}
+				&:nth-child(2){
+					-webkit-animation-delay: 0.2s;
+			    	animation-delay: 0.2s;
+				}
+			}
+		}	
+	}
+}					
+
+@-webkit-keyframes object{
+50% {
+    -ms-transform: translate(0,-50px); 
+   	-webkit-transform: translate(0,-50px);
+    transform: translate(0,-50px);
+	}
+}		
+@keyframes object{
+50% {
+    -ms-transform: translate(0,-50px); 
+   	-webkit-transform: translate(0,-50px);
+    transform: translate(0,-50px);
+	}
+}
+
+.jumbotron{
+	background-image: url('../../img/darling.jpg');
+	background-size:cover;
+	background-position: center;
+	height:800px;
+	color:white;
+	.welcome{
+		position:absolute;
+		top: 300px;
+		left: 35px;
+		width: 330px;
+		-webkit-animation: textmove 10s infinite;
+			animation: textmove 10s infinite;
+		h1 {
+			font-family: $alegreya;
+			font-weight: bold;
+			letter-spacing: 0.22em;
+			font-size:2.1em;
+		}
+		p{
+			font-family: $open-sans;
+			margin-top:20px;
+			font-size: 1em;
+			letter-spacing:  0.22em;
+			line-height: 1.7;
+		}
+		@-webkit-keyframes textmove{
+			0% {
+			    -ms-transform: translate(0,-10px); 
+			   	-webkit-transform: translate(0,-10px);
+			    transform: translate(0,-10px);
+			}
+
+			50%{
+				-ms-transform: translate(7px,10px); 
+			   	-webkit-transform: translate(7px,10px);
+			    transform: translate(7px,10px);
+			}
+
+			100% {
+			    -ms-transform: translate(0,-10px); 
+			   	-webkit-transform: translate(0,-10px);
+			    transform: translate(0,-10px);
+			}
+		}
+	}
+	.slogan{
+		top: 380px;
+		right: 5px;
+		position: absolute;
+		h2{
+			font-family: $alegreya;
+			font-size: 1.3em;
+			letter-spacing: 0.22em;
+			-webkit-animation: sloganmove 10s infinite;
+			animation: sloganmove 10s infinite;
+		}
+	}
+}
+
+section#blog{
+	h3{
+		font-size: 1.9em;
+		font-family: $alegreya;
+		letter-spacing: $letter-spacing;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 85px;
+		text-transform: uppercase;
+	}
+	h4{
+		font-size: 1.5em; 
+		font-family: $alegreya;
+		letter-spacing: $letter-spacing;
+		font-weight: bold;
+		margin-top: 30px;
+	}
+	p{
+		font-family: $open-sans;
+		font-weight: lighter;
+		letter-spacing: 0.2em;
+		font-size: 0.9em;
+		margin-bottom: 50px;
+	}
+	.no-padding{
+		padding-left:0px;
+		padding-right: 0px;
+	}
+	.line{
+		width: 100px;
+		height: 2px;
+		background-color: black;
+		margin: 50px auto;
+	}
+	p.about{
+		font-style: italic;
+		text-align: center;
+		font-size: 1.1em;
+		margin-bottom: 80px;
+	}
+	.little-thumb{
+		width:100%;
+		height:250px;
+		&:hover {
+			-webkit-animation: littlethumb 20s infinite;
+			-moz-animation: littlethumb 20s infinite;
+			animation: littlethumb 20s infinite;
+			cursor:pointer;
+	    }
+	}
+
+	.big-thumb{
+		width:100%;
+		height:700px;
+		background-size: 162% !important;
+		&:hover {
+			-webkit-animation: bigthumb 20s infinite;
+			-moz-animation: bigthumb 20s infinite;
+			animation: bigthumb 20s infinite;
+			cursor:pointer;
+	    }
+	}
+	.picture{
+		background-size: 140%;
+		background-position: center;
+		&.number1{
+			background-image: url('../../img/thumb1.jpg');
+		}
+		&.number2{
+			background-image: url('../../img/thumb2.jpg');
+		}
+		&.number3{
+			background-image: url('../../img/thumb3.jpg');
+		}
+		&.number4{
+			background-image: url('../../img/thumb4.jpg');
+		}
+		&.number5{
+			background-image: url('../../img/thumb5.jpg');
+		}
+		&.number6{
+			background-image: url('../../img/thumb6.jpg');
+		}
+		&.number7{
+			background-image: url('../../img/thumb7.jpg');
+		}
+		&.number8{
+			background-image: url('../../img/thumb8.jpg');
+		}
+		&.number9{
+			background-image: url('../../img/thumb9.jpg');
+		}
+	}
+	
+}
+
+footer{
+	background-image: url('../../img/darling2.jpg');
+	background-size:cover;
+	background-position-y:center;
+	color:white;
+	margin-top:85px;
+	h1{
+		text-align:center;
+		font-family: $alegreya;
+		font-weight: bold;
+		font-size:2em;
+	}
+	.title{
+		padding-top: 100px;
+		text-transform: uppercase;
+		letter-spacing: 0.22em;
+		padding-bottom: 40px;
+	}
+	.author{
+		text-align:center;
+		font-family: $alegreya;
+		font-weight: lighter;
+		letter-spacing: $letter-spacing;
+		margin-top:70px;
+	}
+	.hashtag{
+		text-align:center;
+		font-family: $alegreya;
+		font-style:italic;
+		font-weight: lighter;
+		letter-spacing: $letter-spacing;
+		margin-bottom:40px;
+	}
+	.carousel-control.right,.carousel-control.left{
+		background-image:none;
+	}
+	.carousel-control .icon-next {
+	    margin-right: -15px;
+	}
+	.carousel-control .icon-prev, .carousel-control .icon-next {
+	    width: 120px;
+	    height: 120px;
+	    margin-top: -60px;
+	    font-size: 120px;
+	}
+}
+
+.modal-header{
+	background-image: url('../../img/thumb4.jpg');
+	background-position: center;
+	.thumb{
+		padding: 0px;
+		height:400px;
+		width:100%;
+	}
+}
+
+.modal-body{
+	h1{
+		font-family: $alegreya;
+		font-weight: bold;
+		letter-spacing: 0.2em;
+		text-align:center;
+		font-size: 1.9em;
+		margin-top: 55px;
+		margin-bottom: 55px;
+	}
+	p{
+		font-family: $open-sans;
+		font-weight: lighter;
+	    letter-spacing: 0.2em;
+	    font-size: 0.9em;
+		padding: 0 100px 50px 100px;
+		text-align: justify;
+	}
+}
+/*********************************************************
+ * Animation
+ *********************************************************/
+	@-webkit-keyframes littlethumb{
+		0%{
+			background-position:center;
+		    background-size:140%;
+		}
+		50%{
+			background-position:center;
+			background-size:190%;
+		}
+		100%{
+			background-position:center;
+		    background-size:140%;
+		}
+	}
+	@-webkit-keyframes bigthumb{
+		0%{
+			background-position:center;
+		    background-size:162%;
+		}
+		50%{
+			background-position:center;
+			background-size:200%;
+		}
+		100%{
+			background-position:center;
+		    background-size:162%;
+		}
+	}
+	@-webkit-keyframes sloganmove{
+		0% {
+		    -ms-transform: translate(0,10px); 
+		   	-webkit-transform: translate(0,10px);
+		    transform: translate(0,10px);
+		}
+
+		50%{
+			-ms-transform: translate(7px,-10px); 
+		   	-webkit-transform: translate(7px,-10px);
+		    transform: translate(7px,-10px);
+		}
+
+		100% {
+		    -ms-transform: translate(0,10px); 
+		   	-webkit-transform: translate(0,10px);
+		    transform: translate(0,10px);
+		}
+	}	
+/*********************************************************
+ * Mobile
+ *********************************************************/
+@include media-breakpoint-down(lg) { 
+	.jumbotron{
+		background-position: center;
+		.slogan{
+			right: -50px;
+			position: absolute;
+		}
+	}
+	
+}
+
+@include media-breakpoint-down(md) { 
+	.jumbotron{
+		background-position: 0px -200px;
+		height: 500px;
+		background-size: 150%;
+		.welcome{
+			top:100px;
+		}
+	}
+	.slogan{
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.author{
+		font-size: 1.5em;
+	} 
+	.hashtag{
+		font-size: 1.5em;
+	}
+	.jumbotron {
+		height: 300px;
+		background-position: 0px;
+		.welcome{
+			position:relative;
+			animation:none;
+			animation: none;
+			left: auto;
+			width: auto;
+			p{
+				display: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) { 
+	.jumbotron {
+		left: auto;
+		.welcome{
+			width:50px;
+		}
+	}
+	.modal-body{
+		p{
+			padding: 0 10px 5px 10px;
+		}
+	}
+}
