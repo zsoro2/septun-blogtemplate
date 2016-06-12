@@ -4687,6 +4687,8 @@ section#blog p.about {
   text-align: center;
   font-size: 1.1em;
   margin-bottom: 80px; }
+section#blog .img-wrapper {
+  overflow: hidden; }
 section#blog .little-thumb {
   width: 100%;
   height: 250px; }
@@ -4793,23 +4795,29 @@ footer {
 @-webkit-keyframes littlethumb {
   0% {
     background-position: center;
-    background-size: 140%; }
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
   50% {
     background-position: center;
-    background-size: 190%; }
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3); }
   100% {
     background-position: center;
-    background-size: 140%; } }
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
 @-webkit-keyframes bigthumb {
   0% {
     background-position: center;
-    background-size: 162%; }
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
   50% {
     background-position: center;
-    background-size: 200%; }
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3); }
   100% {
     background-position: center;
-    background-size: 162%; } }
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
 @-webkit-keyframes sloganmove {
   0% {
     -ms-transform: translate(0, 10px);
